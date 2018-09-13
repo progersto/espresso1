@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:paddingLeft="15dp"
+    android:paddingStart="15dp"
+    android:paddingRight="25dp"
+    android:paddingEnd="25dp"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/close_gray"
+            android:layout_gravity="end"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:hint="Name"
+                android:theme="@style/EditTextTheme"
+                style="@style/EditAddressField"
+                android:inputType="textPersonName"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_marginTop="8dp"
+                android:layout_width="25dp"
+                android:padding="0dp"
+                android:src="@drawable/user"
+                android:layout_height="25dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginTop="8dp"
+                android:layout_width="25dp"
+                android:padding="3dp"
+                android:src="@drawable/location"
+                android:layout_height="25dp" />
+
+            <EditText
+                android:theme="@style/EditTextTheme"
+                android:id="@+id/address"
+                android:inputType="textMultiLine"
+                android:lines="2"
+                android:hint="Address"
+                android:minLines="1"
+                android:layout_width="match_parent"
+                style="@style/EditAddressField"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:theme="@style/EditTextTheme"
+                android:id="@+id/locality"
+                android:hint="Locality"
+                android:layout_width="match_parent"
+                style="@style/EditAddressField"
+                android:inputType="textPostalAddress"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:theme="@style/EditTextTheme"
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:hint="City"
+                style="@style/EditAddressField"
+                android:inputType="textPostalAddress"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:theme="@style/EditTextTheme"
+                android:id="@+id/state"
+                android:layout_width="match_parent"
+                android:hint="State"
+                style="@style/EditAddressField"
+                android:inputType="textPostalAddress"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:theme="@style/EditTextTheme"
+                android:id="@+id/pinCode"
+                android:layout_width="match_parent"
+                android:hint="Pincode"
+                style="@style/EditAddressField"
+                android:inputType="number"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginTop="8dp"
+                android:layout_width="25dp"
+                android:padding="2dp"
+                android:src="@drawable/phone"
+                android:layout_height="25dp" />
+
+            <EditText
+                android:theme="@style/EditTextTheme"
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:hint="Phone"
+                style="@style/EditAddressField"
+                android:inputType="phone"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginTop="8dp"
+                android:layout_width="25dp"
+                android:padding="2dp"
+                android:src="@drawable/email"
+                android:layout_height="25dp" />
+
+            <EditText
+                android:theme="@style/EditTextTheme"
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:hint="Email"
+                style="@style/EditAddressField"
+                android:inputType="textEmailAddress"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/save"
+                android:background="@drawable/button_background"
+                android:textColor="#fff"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Save"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/progress_dialog"/>
+
+</RelativeLayout>

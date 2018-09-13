@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group>
+        <item
+            android:id="@+id/nav_daily_collection"
+            android:icon="@drawable/calendar"
+            android:title="Daily Collection" />
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/coffeepot"
+            android:visible="false"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_pot"
+            android:icon="@drawable/expresso"
+            android:title="My Espresso"
+            app:actionLayout="@layout/espresso_drawer_menu"/>
+        <item
+            android:id="@+id/nav_cart"
+            android:icon="@drawable/cart"
+            android:title="Cart" />
+
+        <item
+            android:id="@+id/nav_user_network"
+            android:icon="@drawable/cart"
+            android:title="User network" />
+
+        <!--<item-->
+            <!--android:id="@+id/nav_facebook"-->
+            <!--android:icon="@drawable/white_fb"-->
+            <!--android:title="facebook" />-->
+
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/order"
+            android:title="My Orders" />
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/login"
+            android:title="Login" />
+
+        <item
+            android:id="@+id/nav_bronz"
+            android:icon="@drawable/login"
+            android:title="Bronz" />
+        <item
+            android:id="@+id/nav_review"
+            android:icon="@drawable/review_us"
+            android:title="Review Us" />
+    </group>
+
+</menu>

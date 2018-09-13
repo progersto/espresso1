@@ -1,0 +1,187 @@
+{
+  "project_info": {
+    "project_number": "810158370016",
+    "firebase_url": "https://miracasexpresso.firebaseio.com",
+    "project_id": "miracasexpresso",
+    "storage_bucket": "miracasexpresso.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:810158370016:android:2d537151fbc90479",
+        "android_client_info": {
+          "package_name": "com.miracas.expresso"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "810158370016-gpgjdl8ujl6bqctt0afvh5tjtjhk18gi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.miracas.expresso",
+            "certificate_hash": "e6dad734e866304b12cbe66d4fc39feb255ea8fb"
+          }
+        },
+        {
+          "client_id": "810158370016-i8e60her4o017h5l4jmscp495btc6an2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlzE9CzwDlcFFCB77Lq5MZX-hWRtQXPRI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "810158370016-i8e60her4o017h5l4jmscp495btc6an2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:810158370016:android:879f16ca1bf9e931",
+        "android_client_info": {
+          "package_name": "com.miracas.espresso"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "810158370016-sdv2p312lq6lddv2f100n95arutj739e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.miracas.espresso",
+            "certificate_hash": "e6dad734e866304b12cbe66d4fc39feb255ea8fb"
+          }
+        },
+        {
+          "client_id": "810158370016-i8e60her4o017h5l4jmscp495btc6an2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlzE9CzwDlcFFCB77Lq5MZX-hWRtQXPRI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "810158370016-i8e60her4o017h5l4jmscp495btc6an2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:810158370016:android:010e5787eb5fb535",
+        "android_client_info": {
+          "package_name": "com.miracas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "810158370016-kg1if71en36h5ngdnulm9utrq50md61v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.miracas",
+            "certificate_hash": "e6dad734e866304b12cbe66d4fc39feb255ea8fb"
+          }
+        },
+        {
+          "client_id": "810158370016-i8e60her4o017h5l4jmscp495btc6an2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlzE9CzwDlcFFCB77Lq5MZX-hWRtQXPRI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "810158370016-i8e60her4o017h5l4jmscp495btc6an2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:810158370016:android:3e1f5836f68043f0",
+        "android_client_info": {
+          "package_name": "com.miracas.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "810158370016-kg622n5rn7bkvea32i222t6lopaam8n9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.miracas.debug",
+            "certificate_hash": "e6dad734e866304b12cbe66d4fc39feb255ea8fb"
+          }
+        },
+        {
+          "client_id": "810158370016-i8e60her4o017h5l4jmscp495btc6an2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlzE9CzwDlcFFCB77Lq5MZX-hWRtQXPRI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "810158370016-i8e60her4o017h5l4jmscp495btc6an2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

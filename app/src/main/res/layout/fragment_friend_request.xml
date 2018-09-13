@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.miracas.espresso.widget.DTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/text_size_30sp"
+        android:text="So many invitations!"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_size_15sp" />
+
+    <com.miracas.espresso.widget.DTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="You seems to be popular"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_size_14sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvRequest"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/text_size_10sp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/text_size_5sp"
+        android:paddingTop="@dimen/text_size_5sp"
+        android:scrollbars="none" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_size_60sp"
+            android:layout_marginRight="@dimen/text_size_15sp"
+            android:layout_marginLeft="@dimen/text_size_15sp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_size_35sp"
+                android:background="@drawable/bg_border_green"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/text_size_15sp"
+                android:paddingRight="@dimen/text_size_15sp">
+
+                <ImageView
+                    android:id="@+id/approve"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    app:srcCompat="@drawable/request_right" />
+
+                <com.miracas.espresso.widget.DTextView
+                    android:id="@+id/approveAll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="Approve All"
+                    android:textColor="@color/text_black" />
+
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_size_35sp"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:paddingLeft="@dimen/text_size_15sp"
+                android:paddingRight="@dimen/text_size_15sp"
+                android:background="@drawable/bg_border_gray">
+
+                <com.miracas.espresso.widget.DTextView
+                    android:id="@+id/skip"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Skip"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:textColor="@color/text_black" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clipToPadding="false"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:transformPivotX="170dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        app:cardElevation="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@drawable/product_background"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:minHeight="600dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+                <Space
+                    android:id="@+id/space"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+                <LinearLayout
+                    android:id="@+id/titleLayout"
+                    android:layout_below="@+id/space"
+                    android:background="@color/card_background"
+                    android:alpha="0.9"
+                    android:padding="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="wrap_content"
+                        android:text="Product Title"
+                        android:gravity="start"
+                        android:textSize="14sp"
+                        android:textColor="#333"
+                        android:fontFamily="sans-serif-light"
+                        />
+
+                    <TextView
+                        android:id="@+id/priceOld"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="₹1200"
+                        android:gravity="end"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="#333"
+                        />
+
+                    <TextView
+                        android:id="@+id/priceNew"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="₹1000"
+                        android:gravity="end"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="@color/colorPrimary"
+                        />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/fab"
+                    android:src="@drawable/cart"
+                    android:background="@drawable/circle_dark"
+                    android:layout_centerHorizontal="true"
+                    android:elevation="3dp"
+                    android:padding="15dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/footerMessage"
+        android:visibility="gone"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="50dp"
+        android:layout_below="@+id/card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ccc"
+        android:text="You have reached the end of page"/>
+
+</RelativeLayout>

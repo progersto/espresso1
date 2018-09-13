@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="bottom"
+    android:gravity="bottom"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/bottomNav"
+        android:visibility="invisible"
+        app:cardElevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.BottomNavigationView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:foregroundGravity="bottom"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#fff"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+
+                <TextView
+                    android:id="@+id/cartTotal"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="₹ 1500"
+                    android:textColor="#333"
+                    android:textStyle="bold"
+                    android:paddingLeft="20dp"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/btn_continue"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="CONTINUE"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/button_background"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+
+        </android.support.design.widget.BottomNavigationView>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

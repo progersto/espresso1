@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#f5f5f5"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/products_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="10dp"
+            android:divider="@android:color/transparent">
+        </android.support.v7.widget.RecyclerView>
+
+        <include layout="@layout/progress"/>
+
+        <TextView
+            android:id="@+id/emptyMessage"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:text="Your espresso is empty, go ahead and add products"/>
+
+        <View
+            android:id="@+id/tint"
+            android:visibility="gone"
+            android:background="@color/black"
+            android:alpha="0.8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:id="@+id/tooltipBrewed"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#eee"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:padding="20dp" >
+
+                    <ImageView
+                        android:id="@+id/fab"
+                        android:src="@drawable/cart"
+                        android:background="@drawable/circle_dark"
+                        android:layout_centerInParent="true"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="match_parent"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#777"
+                        android:textSize="14sp"
+                        android:paddingBottom="3dp"
+                        android:layout_centerInParent="true"
+                        android:text="The products are brewed and available with max discount. You can buy them now!"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:src="@drawable/arrow_down"
+                android:layout_width="30dp"
+                android:layout_gravity="center"
+                android:layout_height="15dp"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

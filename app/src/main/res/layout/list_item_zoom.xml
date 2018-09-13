@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.miracas.espresso.layouts.TouchImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/image"
+    android:minWidth="200dp"
+    android:scaleType="matrix"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_width="match_parent"
+    android:adjustViewBounds="true"
+    android:background="@drawable/top_border_radius"
+    android:layout_height="match_parent" />

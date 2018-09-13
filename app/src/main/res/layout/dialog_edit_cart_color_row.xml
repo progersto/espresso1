@@ -1,0 +1,38 @@
+<RelativeLayout
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/colorValue"
+        android:layout_width="80dp"
+        android:text="Blue"
+        android:textColor="#777"
+        android:textSize="16sp"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/colorCircle"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/circle2"/>
+
+    <ImageView
+        android:id="@+id/check"
+        android:visibility="invisible"
+        android:layout_width="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_gravity="end"
+        android:src="@drawable/checked"
+        android:layout_height="20dp" />
+
+</RelativeLayout>

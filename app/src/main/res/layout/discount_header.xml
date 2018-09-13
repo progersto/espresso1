@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <View
+        android:id="@+id/tint"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:alpha="0.8"/>
+
+    <LinearLayout
+        android:id="@+id/discountHeader"
+        android:baselineAligned="true"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/discountParent"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            style="@style/HomePageHeaders"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:alpha="0.9"
+                android:layout_gravity="center"
+                android:src="@drawable/beans"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:textSize="11sp"
+                android:textColor="@color/colorPrimary"
+                android:text="Running Discount"/>
+
+            <TextView
+                android:id="@+id/runningDiscount"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="22sp"
+                android:layout_height="wrap_content"
+                android:text="0"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/totalBookingsParent"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            style="@style/HomePageHeaders"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/yourBookingsIcon"
+                android:layout_width="wrap_content"
+                android:alpha="0.9"
+                android:layout_gravity="center"
+                android:src="@drawable/coffeepot"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="11sp"
+                android:text="Total Bookings"/>
+
+            <TextView
+                android:id="@+id/bookingsRemaining"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="22sp"
+                android:layout_height="wrap_content"
+                android:text="0"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/myBookings"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            style="@style/HomePageHeaders"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:alpha="1.0"
+                android:layout_gravity="center"
+                android:src="@drawable/expresso"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="11sp"
+                android:text="Your bookings"/>
+
+            <TextView
+                android:id="@+id/yourBookings"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="22sp"
+                android:layout_height="wrap_content"
+                android:text="0"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/tooltip"
+        android:visibility="gone"
+        android:layout_below="@id/discountHeader"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/arrow_up"
+            android:layout_marginRight="60dp"
+            android:layout_width="30dp"
+            android:layout_height="15dp"/>
+
+        <LinearLayout
+            android:layout_below="@+id/arrow"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#eee"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                android:padding="20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:layout_centerInParent="true"
+                    android:text="TIP"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_height="match_parent"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#777"
+                    android:textSize="14sp"
+                    android:paddingBottom="3dp"
+                    android:layout_centerInParent="true"
+                    android:text="Added to your espresso. You can buy it when the discount hits the roof. We will send you a notification. Keep booking!"/>
+
+            </RelativeLayout>
+
+            <!--RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:background="#eee"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_centerInParent="true"
+                    android:text="TIP"
+                    android:textSize="18sp"/>
+
+            </RelativeLayout-->
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

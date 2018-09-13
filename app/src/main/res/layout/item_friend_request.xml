@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/text_size_5sp"
+        android:layout_marginTop="@dimen/text_size_5sp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/text_size_8sp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_friend_request_picture"
+            android:layout_width="@dimen/text_size_60sp"
+            android:layout_height="@dimen/text_size_60sp"
+            app:civ_border_color="@color/divider"
+            app:civ_border_width="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/text_size_10sp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.miracas.espresso.widget.DTextView
+                        android:id="@+id/item_friend_request_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_size_13sp" />
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/reject"
+                    android:layout_width="@dimen/text_size_28sp"
+                    android:layout_height="@dimen/text_size_28sp"
+                    app:srcCompat="@drawable/request_remove" />
+
+                <Space
+                    android:layout_width="@dimen/text_size_10sp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/approve"
+                    android:layout_width="@dimen/text_size_34sp"
+                    android:layout_height="@dimen/text_size_34sp"
+                    app:srcCompat="@drawable/request_approve" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/text_size_10sp"
+                android:layout_marginTop="@dimen/text_size_10sp"
+                android:background="@color/divider" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

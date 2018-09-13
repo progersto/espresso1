@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clipToPadding="false"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/messageHeader"
+        android:gravity="center"
+        android:padding="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="#ffebe5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please note that only orders placed via espresso app will be visible here"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/parent"
+        android:layout_below="@+id/messageHeader"
+        android:layout_width="match_parent"
+        app:cardElevation="3dp"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <RelativeLayout
+                android:id="@+id/orderBlock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fafafa">
+
+                <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/orderID"
+                    android:layout_width="wrap_content"
+                    android:text="Order ID : 123"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="#333"
+                    android:textSize="14sp">
+                </TextView>
+
+                <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/totalProducts"
+                    android:layout_below="@+id/orderID"
+                    android:layout_width="wrap_content"
+                    android:text="3 Products"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="#333"
+                    android:textSize="14sp">
+                </TextView>
+
+                <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/date"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:text="1 Jan 2017"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:paddingEnd="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingStart="0dp"
+                    android:paddingLeft="0dp"
+                    android:textColor="#555"
+                    android:textSize="14sp">
+                </TextView>
+
+                <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/orderTotal"
+                    android:layout_below="@id/date"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:text="₹ 2000.0"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingEnd="15dp"
+                    android:paddingBottom="15dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp">
+                </TextView>
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/list"
+                android:layout_below="@+id/orderBlock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

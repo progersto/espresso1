@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_size_60sp"
+            android:layout_marginRight="@dimen/text_size_15sp"
+            android:layout_marginLeft="@dimen/text_size_15sp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"/>
+
+            <LinearLayout
+                android:id="@+id/sendInvitaions"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_size_35sp"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:background="@drawable/bg_border_green"
+                android:paddingLeft="@dimen/text_size_15sp"
+                android:paddingRight="@dimen/text_size_15sp">
+
+                <ImageView
+                    android:id="@+id/approve"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    app:srcCompat="@drawable/request_right" />
+
+                <com.miracas.espresso.widget.DTextView
+                    android:id="@+id/sendAll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/contacts_send_invitations"
+                    android:textColor="@color/text_black" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

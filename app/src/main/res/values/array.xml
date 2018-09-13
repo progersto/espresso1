@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="bronz_level">
+        <item>@string/subtype_all</item>
+        <item>@string/subtype_begginer</item>
+        <item>@string/subtype_bronz</item>
+        <item>@string/subtype_silver</item>
+        <item>@string/subtype_gold</item>
+        <item>@string/subtype_platinum</item>
+    </array>
+
+</resources>

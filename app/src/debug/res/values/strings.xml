@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="app_name">Espresso Debug</string>
+
+    <string name="file_provider_authority"
+        translatable="false">com.miracas.debug.fileprovider</string>
+
+    <string name="php_server">http://miracas.com</string>
+    <string name="rails_server">http://api.miracas.com</string>
+    <string name="rails_server_developemnt">http://test-api.miracas.com</string>
+
+    <!-- Facebook Config -->
+    <string name="facebook_app_id">542034999489890</string> <!-- 542034999489890 -->
+    <string name="fb_login_protocol_scheme">fb542034999489890</string>
+
+</resources>
+

@@ -1,0 +1,27 @@
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <include layout="@layout/content_main" />
+
+    <RelativeLayout
+        android:id="@+id/footerLayout"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/footerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="Button"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_background"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
