@@ -149,6 +149,11 @@ public class OTPActviity extends AppCompatActivity implements RestAuthWithOTPInt
 //                intent.putExtra(PHONE_NUMBER,phoneNumber);
 //                startActivity(intent);
 //                finish();
+
+//                Intent intent = new Intent(this,FriendRequestActivity.class);
+//                intent.putExtra(PHONE_NUMBER,phoneNumber);
+//                startActivity(intent);
+//                finish();
                 break;
         }
     }

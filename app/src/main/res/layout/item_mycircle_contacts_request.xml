@@ -69,6 +69,7 @@
             android:layout_width="@dimen/_20sdp"
             android:layout_height="@dimen/_15sdp"
             android:layout_marginTop="@dimen/_5sdp"
+            android:layout_gravity="center_vertical"
             app:srcCompat="@drawable/ic_contact_more" />
 
     </LinearLayout>

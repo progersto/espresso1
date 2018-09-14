@@ -46,6 +46,7 @@ import com.miracas.espresso.dialogs.ReviewDialog;
 import com.miracas.espresso.fragments.MyCircleContactsFragment;
 import com.miracas.espresso.fragments.SectionPageFragment;
 import com.miracas.espresso.fragments.cart.CartFragment;
+import com.miracas.espresso.fragments.contacts.ContactPager;
 import com.miracas.espresso.fragments.expresso.MyExpressoFragment;
 import com.miracas.espresso.fragments.home.DailyCollectionFragment;
 import com.miracas.espresso.fragments.home.DirectPurchaseFragment;
@@ -375,7 +376,8 @@ public class MainActivity extends AppCompatActivity
         }else if(menuID == R.id.nav_bronz){
             fragment = new ShopFragment();
         }else if(menuID == R.id.nav_user_network){
-            fragment = new MyCircleContactsFragment();
+//            fragment = new MyCircleContactsFragment();
+            fragment = new ContactPager();
         }else if(menuID == R.id.nav_bronz_products){
             ShopProductsFragment shopProductsFragment = new ShopProductsFragment();
             shopProductsFragment.setArguments(arguments);

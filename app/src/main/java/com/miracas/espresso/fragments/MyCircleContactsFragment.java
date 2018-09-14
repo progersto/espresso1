@@ -17,6 +17,7 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 import com.android.volley.VolleyError;
 import com.miracas.R;
+import com.miracas.espresso.activity.MainActivity;
 import com.miracas.espresso.activity.contacts.ContactActivity;
 import com.miracas.espresso.adapters.MycircleContactsAdapter;
 import com.miracas.espresso.model.ContactModel;
@@ -54,16 +55,14 @@ public class MyCircleContactsFragment extends BaseFragment implements RestGetUse
     Unbinder unbinder;
     @BindView(R.id.rvContacts)
     RecyclerView rvContacts;
-    @BindView(R.id.btn_add)
-    ImageView btn_add;
+//    @BindView(R.id.btn_add)
+//    ImageView btn_add;
     @BindView(R.id.loading)
     RelativeLayout progress_bar;
     @BindView(R.id.pending_requests)
     DTextView pending_requests;
     @BindView(R.id.search)
     DEditText search;
-    @BindView(R.id.pending_requests_frame)
-    LinearLayout pending_request_frame;
 
     MycircleContactsAdapter adapter;
     RestGetUserNetwork restGetUserNetwork;
@@ -106,11 +105,16 @@ public class MyCircleContactsFragment extends BaseFragment implements RestGetUse
         });
     }
 
-    @Override
-    public void onResume() {
-        super.onResume();
-        onCreateToolbar(getView() ,"User Network", false);
+    @OnClick(R.id.constraintLayout3)
+    public void onBronzeClicked(){
+        ((MainActivity)getActivity()).switchFragment(R.id.nav_bronz, true, null);
     }
+
+//    @Override
+//    public void onResume() {
+//        super.onResume();
+//        onCreateToolbar(getView() ,"User Network", false);
+//    }
 
     @Override
     public void onDestroyView() {
@@ -123,7 +127,7 @@ public class MyCircleContactsFragment extends BaseFragment implements RestGetUse
 
     }
 
-    @OnClick(R.id.btn_add)
+    @OnClick(R.id.inviteFriends)
     public void onAddClick(){
         startActivityForResult(new Intent(getContext(), ContactActivity.class),GET_CONTACTS_REQUEST);
     }
@@ -210,7 +214,7 @@ public class MyCircleContactsFragment extends BaseFragment implements RestGetUse
                 if(jsonInvitations.length() > 0){
                     pending_requests.setText(contactModelArrayList.size()+"");
                 }else{
-                    pending_request_frame.setVisibility(View.GONE);
+                    pending_requests.setVisibility(View.GONE);
                 }
             }
         } catch (JSONException e) {

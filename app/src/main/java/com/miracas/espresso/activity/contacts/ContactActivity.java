@@ -139,7 +139,6 @@ public class ContactActivity extends AppCompatActivity implements ContactListCur
                 }else{
                     showInviteError();
                 }
-
                 finish();
 
             }else{

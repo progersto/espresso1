@@ -21,7 +21,7 @@ public class RestGetFreebiePictures implements Response.Listener, Response.Error
     public static final String IMG_URL = "img_url";
     public static final String POPUP_IMAGES = "popup_images";
     public static final String INVITED = "invited";
-    public static final String COULDNT_INVITE = "couldn't_invite";
+    public static final String COULDNT_INVITE = "couldnt_invite";
     public static final String SMS_RESPONSE = "sms_response";
     public static final String MESSAGE = "message";
     public static final String TYPE = "type";
